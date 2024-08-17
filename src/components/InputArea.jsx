@@ -10,7 +10,7 @@ function InputArea(props){
       }
     function handleAdd(e){
       e.preventDefault()
-       axios.post("http://localhost:4000/db",{inputText})
+       axios.post("http://localhost:4000/post/todos",{inputText})
        .then(result => {window.location.reload()})
        .catch(err => console.log(err))
        setinputText("")

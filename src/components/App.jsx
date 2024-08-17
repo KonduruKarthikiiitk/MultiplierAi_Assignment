@@ -7,7 +7,7 @@ function App() {
   const [items,setItem] = useState([])
 
   useEffect(()=>{
-    axios.get("http://localhost:4000/get")
+    axios.get("http://localhost:4000/get/todos")
     .then(result=>setItem(result.data))
     .catch(err => console.log(err))
   
