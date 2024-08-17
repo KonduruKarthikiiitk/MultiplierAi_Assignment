@@ -10,4 +10,4 @@ const listSchema = mongoose.Schema({
 })
 
 const List = mongoose.model("lists",listSchema)
-export default List
+export default List 

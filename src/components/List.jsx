@@ -8,7 +8,7 @@ const ToDoItem = (props) => {
 
         props.onChecked(props.index);
       }}
-    >
+    > 
       <li
        style={{textDecoration:props.done?"line-through":null}}>
        {props.text}</li>

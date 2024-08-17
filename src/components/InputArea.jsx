@@ -7,7 +7,7 @@ function InputArea(props){
     function handleChange(e){
         const newValue= e.target.value
         setinputText(newValue)
-      }
+      } 
     function handleAdd(e){
       e.preventDefault()
        axios.post("http://localhost:4000/post/todos",{inputText})
